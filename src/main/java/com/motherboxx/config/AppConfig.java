@@ -13,7 +13,7 @@ public class AppConfig {
     @Bean(name="baseDao")
     public BaseDao baseDao() {
     	//TODO-factor these out
-        return new BaseDao("localhost", 27107, "User_unit_test");
+        return new BaseDao("localhost", 27017, "User_unit_test");
     }
     
     @Bean(name="userDao")

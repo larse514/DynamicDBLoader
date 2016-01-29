@@ -14,5 +14,9 @@ public class BaseDao {
 		this.mongoClient = new MongoClient(url, port);
 		this.db = mongoClient.getDatabase(db);
 	}
+	
+	public MongoDatabase getDB(){
+		return this.db;
+	}
 
 }
